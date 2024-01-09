@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ToDo List</title>
+    
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
+
+    <div class="container">
+        <div class="center-screen">
+            <div class="title">
+                <h1>ToDo List</h1>
+                <img src="./img/giphy.gif"/>
+            </div>
+        </div>
+        
+        
+        <div class="topo">
+            <input type="text" 
+                class="input-nova-tarefa"
+                placeholder="e.g. Study"
+            >
+            <button class="btn-add-task" title="Adicionar">
+                <i class="fa fa-plus"></i>
+                
+            </button>
+
+        </div>
+
+        <ul class="task-list">
+            <!-- <li class="list">
+                <span class="texto-tarefa">tarefa 1</span>
+                <div>
+                    <button class="btn-acao">
+                        <i class="fa fa-check"></i>
+                    </button>
+                    <button class="btn-acao">
+                        <i class="fa fa-pencil"></i>
+                    </button>
+                    <button class="btn-acao">
+                        <i class="fa fa-trash"></i>
+                    </button>
+                </div>
+            </li> -->
+        </ul>
+    </div>
+
+    <div id="janelaEdicao">
+        <button id="janelaEdicaoBtnFechar">
+            <i class="fa fa-remove fa-2x"></i>
+        </button>
+        <h2 id="idTarefaEdicao"></h2>
+        <hr>
+        <form>
+            <div class="frm-linha">
+                <label for="nome">Nome</label>
+                <input type="text" id="inputTarefaNomeEdicao">
+            </div>
+            <div class="frm-linha">
+                <button id="btnAtualizarTarefa">Salvar</button>
+            </div>
+        </form>
+    </div>
+    <div id="janelaEdicaoFundo"></div>
+
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>
